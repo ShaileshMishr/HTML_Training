@@ -1,0 +1,24 @@
+body{
+
+    background-color: rgba(0, 255, 255, 0.932);
+    text-align: center;
+}
+
+fieldset{
+    background-color: white;
+}
+input:focus{
+    background-color:green;
+}
+fieldset{
+    background-color: white;
+}
+
+.choice
+{
+    display: inline-block;
+    margin-left: 200px;
+}
+.imp{
+    margin-left: 200px;
+}

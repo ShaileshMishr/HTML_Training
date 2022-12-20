@@ -1,0 +1,74 @@
+p{
+    text-transform: capitalize;
+    text-align: justify;
+    
+}
+table{
+    background-color: blueviolet;
+}
+/* body{
+    background-color:rgb(223, 238, 18);
+} */
+
+#para1{
+    text-shadow: 2px 2px 5px red;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-variant: small-caps;
+    
+}
+
+/* *{
+    text-align: center;
+} */
+
+
+/* .myclass{
+    color: brown;
+} */
+
+p.myclass{
+    color: brown;
+}
+
+
+tr,th,td{
+    text-align:left;
+}
+
+/* All p tags inside div */
+div p{
+    background-color:chocolate;
+}
+div>p{
+    text-transform: uppercase;
+}
+
+div+p{
+    color: red;
+}
+
+p ~ div{
+    color: green;
+}
+
+#last::after{
+    content: "- End of the document";
+}
+
+a:active{
+    background-color: yellow;
+}
+a:hover{
+    background-color: greenyellow;
+}
+
+input:focus{
+    background-color: palevioletred;
+}
+
+p:nth-of-type(2n){
+    background-color: red;
+}
+
+

@@ -1,0 +1,18 @@
+* {
+    text-align: center;
+}
+table{
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+    color: green;
+}
+
+#sh{
+    text-shadow: 2px 2px 5px red;
+}
+
+p:nth-child(odd){
+    background-color:orangered;
+}

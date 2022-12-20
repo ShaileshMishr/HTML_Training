@@ -10,18 +10,48 @@
         <TItle>
             My Page
         </TItle>
+
+        <!--Internal or Embedded CSS-->
+        <style>
+            a {
+                text-decoration: none;
+                
+            }
+        </style>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">​
+
+
+        <!-- External CSS-->
+        <link rel="stylesheet" href="style.css"/>
+
     </HEAD>
     <BODY>
+        <div>
+            <h2>New div</h2>
+        </div>
+        <p>Righr after div</p>
         <div>
             <h1>Today's  <span style="color:blue">Thought</span></h1>
             <h4>This <del>Thoug</del> <ins>Thought</ins> is taken from <abbr title="World Wide Web">WWW</abbr></h>
 
             <h3><p><dfn>HTML</dfn> is the standard markup language.</p></h3>
+            <p>First Paragraph</p>
+            <p>Second Paragraph</p>
+            <p>Third Paragraph</p>
+            <h3>Set the top and left properties to 50% to center the left-top corner of the</h3>
+            <p>Use a container element and set a specific max-width . </p>
+            <span><p>Another paragraph inside div</p></span>
         </div>
+       
+        
         
         <h2>15-12-2022</h2>
-        <h3>Thursday</h3>
-        <h4>Let's Start</h4>
+        <h3 id="para1" style="font-family: Sofia, sans-serif;">Thursday</h3>
+        <!-- INLINE CSS -->
+        <h4 style="background-color: aquamarine;text-transform: uppercase;">Let's Start</h4>
+
+        
         <strong>This text is <u>important!</u></strong>
         <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ducimus, voluptatem aliquid ratione<br>
              ipsam fugit sed recusandae ex possimus.<hr> Molestiae laborum eos dolor ex nesciunt suscipit blanditiis <br>
@@ -36,6 +66,7 @@
              </pre>
 
              <a href="Day1.html" target="_blank">Go to My first Page</a> <br>
+             <p class="myclass">This is class test.</p>
 
              <a href="https://www.w3schools.com" target="_blank">Go to W3 School</a>  <br>
 
@@ -52,7 +83,7 @@
 
              </iframe>
              <p>
-                <a href="https://getreturnship.com/" target="iframe_1">open in frame</a>
+                <a class="myclass" href="https://getreturnship.com/" target="iframe_1">open in frame</a>
              </p>
 
              <table border="5">
@@ -174,7 +205,10 @@
                     
             </ul>
 
-
+           
+            <div id="last">
+                <h2>New div</h2>
+            </div>
 
             </BODY>
 </HTMl>

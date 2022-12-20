@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Survey</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <h2>Survey Form</h2>
+    <form>
+        <fieldset>
+            <caption>Let us know how can we improve freeCodeCamp</caption>
+            <br><br>
+            <label for="nm">* Name</label>
+            <input type="text" placeholder="Enter name" id="nm" name="nm" style="text-align: center;"><br><br>
+            <label for="email">* Email</label>
+            <input type="email" placeholder="Enter your email" id="email" name="email" style="text-align: center;"><br><br>
+            <label for="age">* Age</label>
+            <input type="number" placeholder="Age" style="text-align: center;" >
+            <br><br>
+            <label for="role">Which option best describes your current role?</label>
+            <select name="role" id="role">
+                <option value="Student">Student</option>
+                <option value="b" >Teacher</option>
+                <option value="c">Tester</option>
+                <option value="d">Developer</option>
+            </select>   <br><br>
+            <div>
+            <label style="text-align: left;" for="choice">* How likely is that you would recommend
+                <br>freeCodeCamp to a friend?</label><br>
+            <input type="radio" class="choice" name="choice">Definitely<br>
+            <input type="radio" class="choice" name="choice">Maybe<br>
+            <input type="radio" class="choice" name="choice">Not sure<br><br>
+        </div>
+            <label for="like">What do you like most in FCC:</label>
+            <select name="like" id="like">
+                <option value="">Select an option</option>
+                <option value="b" >b</option>
+                <option value="c">c</option>
+                <option value="d">d</option>
+            </select>   <br><br>
+            <label for="imp">Things that should be improved in future<br>(Check all that apply):</label><br>
+            <input type="checkbox" class="imp" name="imp">Front-end projects<br>
+            <input type="checkbox" class="imp" name="imp">Back-end Projects<br>
+            <input type="checkbox" class="imp" name="imp">Data Visualization
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
