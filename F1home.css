@@ -1,7 +1,10 @@
 h1{
     /* background-color: rgb(red, green, blue) */
     /* background-color: hsl(hue, saturation, lightness) */
-    background-color: #68f
+    position: relative;
+    top: 70px;
+    background-color: #68f;
+    z-index: 1;
 }
 #para1{
     background-image: url(img/ss.jpeg);
@@ -23,3 +26,27 @@ h1{
     width: 500px;
     box-sizing: border-box;
 }
+
+#d1{
+
+    border-style: solid;
+    height:200px;
+    width: 200px;
+    overflow: auto;
+}
+
+#p1{
+    border-style: solid;
+    /* position: relative;
+    bottom: 50px;
+    left: 2px; */
+    border-color: red;
+}
+
+ul,li {
+    display: inline;
+}
+a{
+    display: block
+}
+
