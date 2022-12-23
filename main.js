@@ -59,7 +59,6 @@ function div() {
     document.getElementById("result").innerHTML=divi
 }
 
-
 function validateForm() {
     var userName = document.myForm.user1.value;
     var password = document.myForm.password.value;
@@ -77,6 +76,7 @@ function validateForm() {
         return true;
     }
 }
+
 
 
 
