@@ -20,3 +20,9 @@ return value
 })
 
 console.log(salesPrice)
+
+
+// for(var i=0; i<2;i++)
+// {
+// console.log(salesPrice[i])
+// }
