@@ -1,5 +1,5 @@
 function validateForm() {
-    var name = document.myForm.name.value;
+   var name = document.myForm.name.value;
     var password = document.myForm.psw.value;
     var repeatpass = document.myForm.rpwd.value;
     var dateofbirth = document.myForm.dob.value;
@@ -8,6 +8,7 @@ function validateForm() {
     var hobbies = document.myForm.hob.value;
     var certificate = document.myForm.cert.value;
 
+   
 
     if(name == ''){
         alert(" Name is Required**");
@@ -35,6 +36,29 @@ function validateForm() {
         alert("dob is Required**")
         return false;
     }
+    else{
+      return conf();
+    }
+
+    function conf(){
+      var userid=document.myForm.id.value;
+      var name = document.myForm.name.value;
+      var dateofbirth = document.myForm.dob.value;
+      var address = document.myForm.addr.value;
+      var qualification = document.myForm.qual.value;
+      var hobbies = document.myForm.hob.value;
+      var certificate = document.myForm.cert.value;
+  
+  
+              localStorage.setItem('userid',userid);
+              localStorage.setItem('username',name);
+              localStorage.setItem('userdob',dateofbirth);
+              localStorage.setItem('hoby',hobbies);
+              localStorage.setItem('educ',qualification);
+              localStorage.setItem('address',address);
+              localStorage.setItem('certific',certificate);
+              
+  }
 
     
 
