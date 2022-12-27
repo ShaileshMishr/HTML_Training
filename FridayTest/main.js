@@ -9,7 +9,7 @@ function validateForm() {
     var hobbies = document.myForm.hob.value;
     var certificate = document.myForm.cert.value;
 
-   alert(qualification)
+  
 
     if(name == ''){
         alert(" Name is Required**");
