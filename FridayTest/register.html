@@ -19,45 +19,81 @@ All validation errors should appear in red text just below the fields. -->
         <form name="myForm" onsubmit="return validateForm()" action="confirm.html" method="post">
             <fieldset>
             <legend>User Information</legend>
-            <label for="id1" id="id1">User Id :</label>
-            <input type="id" id="id" name="id" readonly> <br><br>
-            <label for="name" id="name">User Name :</label>
-            <input type="text" id="name" name="user1" placeholder="Enter name "> <br><br>
+            <div>
+                <label for="id1" id="id1">User Id :</label>
+            <input type="id" id="id" name="id" readonly> <br>
+            </div>
+            
+            <div>
+                <label for="name" id="name">User Name :</label>
+                <input type="text" id="name" name="user1" placeholder="Enter name ">
+                <p style="color: red;" id="validname"></p>
+            </div>
+
+           <div>
             <label for="pwd" id="pwd1">Password:</label>
             
             <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[!@#$%^&])(?=.*[A-Z]).{8,}" title="Must contain 
-            at least one capital letter, at least one special character and min 8 characters long,"> <br><br>
-        
-        </div>
+            at least one capital letter, at least one special character and min 8 characters long,"> 
+            <p style="color: red;" id="validpass"></p>
+           </div>
+            
+     
         <div id="message">
             <h3>Password must contain the following:</h3>
             <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
             <p id="special" class="invalid">A <b>special (!@#$%^&)</b> character</p>
             <p id="length" class="invalid">Minimum <b>8 characters</b></p>
-          </div><br>
-          <div class="container">
-            <label for="rpwd" id="rpwd1">Repeat Password:</label>
-            <input type="password"  id="rpwd" placeholder="Repeat password">
-            <label >If you want to unmasked a Password then check the below box :</label>
-            <input type="checkbox" onclick="myFunction()"> <br><br>
-
-            <label for="dob" id="dob1">Date of Birth :</label>
-            <input type="date" id="dob" name="dob"/> <br><br>
-            <label for="addr1" id="addr1">Address:</label><br>
-            <input type="text" id="addr" name="addr"/> <br><br>
-            <!-- <textarea id="addr" name="addr" rows="4" cols="30" required>
-            </textarea> <br><br> -->
-            <label for="qual" id="qual1">Qualification :</label><br>
-            <textarea id="qual" name="qual" rows=4 cols=30 >
-            </textarea> <br><br>
+          </div>
+        
+            <div>
+                <label for="rpwd" id="rpwd1">Repeat Password:</label>
+                <input type="password"  id="rpwd" placeholder="Repeat password">
+                <p style="color: red;" id="validrepass"></p>
+                <label >If you want to unmasked a Password then check the below box :</label>
+                <input type="checkbox" onclick="myFunction()"> 
+            </div>
            
-            <label for="hob" id="hob1">Hobbies :</label><br>
-            <textarea id="hob" name="hob" rows="4" cols="30" required>
-            </textarea> <br><br>
-            <label for="cert" id="cert1">List of certifications :</label><br>
-            <textarea id="cert" name="cert" rows="4" cols="30" required>
-            </textarea> <br><br>
+            <div>
+                <label for="dob" id="dob1">Date of Birth :</label>
+                <input type="date" id="dob" name="dob"/> 
+                <p style="color: red;" id="validdob"></p>
+            </div>
 
+           <div>
+            <label for="addr1" id="addr1">Address:</label><br>
+            <input type="text" id="addr"  name="addr"/> <br>
+           
+            <p style="color: red;" id="validaddr"></p>
+             <!-- <textarea id="addr" name="addr" rows="4" cols="30" required>
+            </textarea> <br><br> -->
+           </div>
+           
+           <div>
+            <label for="qual" id="qual1">Qualification :</label><br>
+            <input type="text" id="qual"  name="qual"/> <br>
+            <!-- <textarea id="qual" name="qual" rows=4 cols=30 >
+            </textarea> <br> -->
+            <p style="color: red;" id="validqual"></p>
+           </div>
+           
+           <div>
+            <label for="hob" id="hob1">Hobbies :</label><br>
+            <input type="text" id="hob"  name="hob"/> <br>
+            <!-- <textarea id="hob" name="hob" rows="4" cols="30" required>
+            </textarea> <br> -->
+            <p style="color: red;" id="validhob"></p>
+           </div>
+           
+           <div>
+            <label for="cert" id="cert1">List of certifications :</label><br>
+            <input type="text" id="cert"  name="cert"/> <br>
+            <!-- <textarea id="cert" name="cert" rows="4" cols="30" required>
+            </textarea> <br> -->
+            <p style="color: red;" id="validcert"></p>
+           </div>
+           
+        
             <input type="submit"  value="Submit"/>
             <script src="main.js"> </script>
 

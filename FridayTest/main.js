@@ -5,52 +5,71 @@ function validateForm() {
     var dateofbirth = document.myForm.dob.value;
     var address = document.myForm.addr.value;
     var qualification = document.myForm.qual.value;
-   // var qualification = document.myForm.qual.value;
     var hobbies = document.myForm.hob.value;
     var certificate = document.myForm.cert.value;
 
   
 
     if(name == ''){
-        alert(" Name is Required**");
+        //alert(" Name is Required**");
+        var a="Name is Required**";
+        document.getElementById("validname").innerHTML=a;
         return false;
     }
     else if(name.length<6){
-        alert(" min length 6 required**")
+        //alert(" min length 6 required**")
+        var a="Username must be 6 Character";
+        document.getElementById("validname").innerHTML=a;
         return false;
     }
     else if(password ==''){
-        alert("password is Required**")
+        //alert("password is Required**")
+        var pas="Password must be required";
+        document.getElementById("validpass").innerHTML=pas;
         return false;
     }
     else if(repeatpass ==''){
-        alert("repeat pass is Required**")
+        //alert("repeat pass is Required**")
+        var rpas="Repeat Password must be Required";
+        document.getElementById("validrepass").innerHTML=rpas;
         return false;
     }
 
     else if (password != repeatpass) {
-        alert ("\nPassword did not match: Please try again...")
+        //alert ("\nPassword did not match: Please try again...")
+        var rpas="Password must be same";
+        document.getElementById("validrepass").innerHTML=rpas;
         return false;
     }
     
     else if(dateofbirth ==''){
-        alert("dob is Required**")
+       // alert("dob is Required**")
+       var dob1="dob is Required**";
+        document.getElementById("validdob").innerHTML=dob1;
         return false;
     }
     else if(address ==''){
-      alert("address is Required**")
+      //alert("address is Required**")
+      var add1="address is Required**";
+        document.getElementById("validaddr").innerHTML=add1;
       return false;
   }
   else if(qualification ==''){
-    alert("qualification is Required**")
+    //alert("qualification is Required**")
+    var qual1="qualification is Required**";
+        document.getElementById("validqual").innerHTML=qual1;
     return false;
 }
 else if(hobbies ==''){
-  alert(" hobbies are Required**")
+  //alert(" hobbies are Required**")
+  var hob1="hobbies are Required**";
+        document.getElementById("validhob").innerHTML=hob1;
   return false;
 }
 else if(certificate ==''){
-  alert(" certificate is Required**")
+  //alert(" certificate is Required**")
+  var cert1=" certificate is Required**";
+        document.getElementById("validcert").innerHTML=cert1;
   return false;
 }
     else{
@@ -62,7 +81,7 @@ else if(certificate ==''){
       var name = document.myForm.name.value;
       var dateofbirth = document.myForm.dob.value;
       var address = document.myForm.addr.value;
-      var qualification = document.myForm.quali.value;
+      var qualification = document.myForm.qual.value;
       var hobbies = document.myForm.hob.value;
       var certificate = document.myForm.cert.value;
   
