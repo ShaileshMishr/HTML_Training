@@ -5,10 +5,11 @@ function validateForm() {
     var dateofbirth = document.myForm.dob.value;
     var address = document.myForm.addr.value;
     var qualification = document.myForm.qual.value;
+   // var qualification = document.myForm.qual.value;
     var hobbies = document.myForm.hob.value;
     var certificate = document.myForm.cert.value;
 
-   
+   alert(qualification)
 
     if(name == ''){
         alert(" Name is Required**");
@@ -36,6 +37,22 @@ function validateForm() {
         alert("dob is Required**")
         return false;
     }
+    else if(address ==''){
+      alert("address is Required**")
+      return false;
+  }
+  else if(qualification ==''){
+    alert("qualification is Required**")
+    return false;
+}
+else if(hobbies ==''){
+  alert(" hobbies are Required**")
+  return false;
+}
+else if(certificate ==''){
+  alert(" certificate is Required**")
+  return false;
+}
     else{
       return conf();
     }
@@ -45,7 +62,7 @@ function validateForm() {
       var name = document.myForm.name.value;
       var dateofbirth = document.myForm.dob.value;
       var address = document.myForm.addr.value;
-      var qualification = document.myForm.qual.value;
+      var qualification = document.myForm.quali.value;
       var hobbies = document.myForm.hob.value;
       var certificate = document.myForm.cert.value;
   
@@ -59,12 +76,7 @@ function validateForm() {
               localStorage.setItem('certific',certificate);
               
   }
-
-    
-
 }
-
-
 
 function myFunction() {
     var x = document.getElementById("rpwd");

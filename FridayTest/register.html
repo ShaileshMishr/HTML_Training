@@ -20,7 +20,7 @@ All validation errors should appear in red text just below the fields. -->
             <fieldset>
             <legend>User Information</legend>
             <label for="id1" id="id1">User Id :</label>
-            <input type="id" id="id" name="id" > <br><br>
+            <input type="id" id="id" name="id" readonly> <br><br>
             <label for="name" id="name">User Name :</label>
             <input type="text" id="name" name="user1" placeholder="Enter name "> <br><br>
             <label for="pwd" id="pwd1">Password:</label>
@@ -44,10 +44,11 @@ All validation errors should appear in red text just below the fields. -->
             <label for="dob" id="dob1">Date of Birth :</label>
             <input type="date" id="dob" name="dob"/> <br><br>
             <label for="addr1" id="addr1">Address:</label><br>
-            <textarea id="addr" name="addr" rows="4" cols="30" required>
-            </textarea> <br><br>
-            <label for="qual1" id="qual1">Qualification :</label><br>
-            <textarea id="qual" name="qual" rows="4" cols="30" required>
+            <input type="text" id="addr" name="addr"/> <br><br>
+            <!-- <textarea id="addr" name="addr" rows="4" cols="30" required>
+            </textarea> <br><br> -->
+            <label for="qual" id="qual1">Qualification :</label><br>
+            <textarea id="qual" name="qual" rows=4 cols=30 >
             </textarea> <br><br>
            
             <label for="hob1" id="hob1">Hobbies :</label><br>
